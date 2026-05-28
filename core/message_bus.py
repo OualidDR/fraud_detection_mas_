@@ -43,8 +43,8 @@ class MessageBus:
             self._history.append(message)
 
         if not handlers:
-            logger.warning(f"Aucun abonné pour {message.type.name}")
-            return
+                logger.debug(f"Aucun abonné pour {message.type.name}")
+                return
 
         for handler in handlers:
             try:

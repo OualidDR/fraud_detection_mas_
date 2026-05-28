@@ -1,9 +1,38 @@
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-.env
+*.pyd
+.Python
+
+# ── Virtual Environment ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Data (too large for Git) ──────────────────────────────────────────────────
 data/raw/
-models/
+data/processed/
+
+# ── Trained Models (too large for Git) ───────────────────────────────────────
+models/*.joblib
+models/*.pkl
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
 logs/
 *.log
+
+# ── Jupyter / Colab Notebooks ─────────────────────────────────────────────────
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# ── OS Files ─────────────────────────────────────────────────────────────────
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

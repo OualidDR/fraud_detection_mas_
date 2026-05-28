@@ -1,5 +1,25 @@
 # 🕵️ Détection de Fraudes Bancaires — Architecture Multi-Agents (MAS)
 
+fraud_detection_mas/
+├── main.py                     ← Point d'entrée
+├── config.py                   ← Tous les paramètres
+├── requirements.txt
+├── agents/
+│   ├── analyseur_agent.py      ← Agent 1
+│   ├── detecteur_agent.py      ← Agent 2
+│   └── alerte_agent.py         ← Agent 3
+├── core/
+│   ├── message_bus.py          ← CŒUR de l'orchestration
+│   └── messages.py             ← Contrat de communication
+├── scripts/
+│   ├── train_model.py          ← Entraînement offline
+│   └── evaluate.py             ← Métriques
+├── tests/
+│   ├── test_message_bus.py
+│   └── test_agents.py
+└── data/  models/  logs/
+
+
 ## Architecture
 ```
 Transaction → Agent Analyseur → Agent Détecteur → Agent Alerte → Décision
