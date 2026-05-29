@@ -15,9 +15,9 @@ IF_N_ESTIMATORS   = 100
 IF_RANDOM_STATE   = 42
 
 # Seuils de l'agent Alerte
-SEUIL_BLOCAGE     = 0.75    # score_anomalie >= 0.75 → BLOQUER
-SEUIL_AUTH        = 0.50    # score_anomalie >= 0.50 → AUTH_REQUISE
-MONTANT_SUSPECT   = 1000.0  # Montant (€) déclenchant vigilance accrue
+SEUIL_BLOCAGE  = 0.45
+SEUIL_AUTH     = 0.30
+MONTANT_SUSPECT = 500.0 
 HEURE_NUIT_DEBUT  = 1       # 01h00
 HEURE_NUIT_FIN    = 5       # 05h00
 VELOCITE_MAX      = 5       # nb transactions / 10 min max avant alerte
